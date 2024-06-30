@@ -1,0 +1,143 @@
+:root {
+    --primary: rgb(161, 10, 10);
+    --bg: #f5fad4;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: rgb(0, 0, 0);
+    /* min-height: 5000px; */
+  }
+  
+
+
+/* hero section */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  background: linear-gradient(to right, burlywood, #81C784);
+  color: white;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 100%;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero-image img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .hero-content, .hero-image {
+      max-width: 100%;
+  }
+
+  .hero-content {
+      margin-bottom: 30px;
+  }
+}
+
+/* menu section */
+
+.additional-info {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  background-color: #f5fad4;
+  color: #333;
+  margin-top: 10px;
+}
+
+.additional-info .info-content {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  margin-left: 0 auto;
+}
+
+.additional-info img {
+  max-width: 50%;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.additional-info .info-text {
+  flex: 1;
+}
+
+.additional-info .info-text h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.additional-info .info-text p {
+  font-size: 18px;
+  line-height: 1.5;
+  white-space: nowrap;
+  overflow: auto;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .additional-info {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px;
+  }
+
+  .additional-info .info-content {
+      flex-direction: column;
+  }
+
+  .additional-info img {
+      margin-bottom: 20px;
+      max-width: 100%;
+  }
+
+  .additional-info .info-text {
+      max-width: 100%;
+  }
+}
